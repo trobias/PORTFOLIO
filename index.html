@@ -1,129 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tobías Tarnowski | Automatización, IA y Soporte Técnico</title>
-    
-    <!-- SEO -->
-    <meta name="description" content="Portafolio de Tobías Tarnowski — Técnico Informático e Ingeniero en Sistemas en formación. Automatización con n8n, Inteligencia Artificial, soporte técnico, redes y proyectos de hardware.">
-    <meta name="keywords" content="Tobías Tarnowski, n8n, Automatización, Inteligencia Artificial, IA, Python, SQL, Soporte Técnico, Sistemas, Arduino, Raspberry Pi, Power BI, Redes, Vercel, GitHub">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tobías Tarnowski | Automatización, IA y Soporte Técnico</title>
 
-    <!-- Open Graph (para LinkedIn, WhatsApp, etc.) -->
-    <meta property="og:title" content="Tobías Tarnowski | Automatización, IA y Soporte Técnico">
-    <meta property="og:description" content="Conecto servicios, automatizo procesos y creo soluciones inteligentes. Mirá mis proyectos en IA, redes y soporte técnico.">
-    <meta property="og:image" content="https://tobias.vercel.app/images/preview.png">
-    <meta property="og:url" content="https://tobias.vercel.app">
-    <meta property="og:type" content="website">
+  <!-- SEO -->
+  <meta name="description" content="Portafolio de Tobías Tarnowski — Técnico Informático e Ingeniero en Sistemas en formación. Automatización con n8n, Inteligencia Artificial, soporte técnico, redes y proyectos de hardware." />
+  <link rel="canonical" href="https://tobias.vercel.app" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tobías Tarnowski | Automatización, IA y Soporte Técnico" />
+  <meta property="og:description" content="Conecto servicios, automatizo procesos y creo soluciones inteligentes. Mirá mis proyectos en IA, redes y soporte técnico." />
+  <meta property="og:image" content="https://tobias.vercel.app/images/preview.png" />
+  <meta property="og:url" content="https://tobias.vercel.app" />
+  <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* --- ajustes visuales específicos --- */
+    .hero-image img {
+      width: 280px;
+      height: auto;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* sobre mí y contacto más prolijos */
+    .about p,
+    .contact p,
+    .contact ul {
+      color: #475569;
+      line-height: 1.7;
+      max-width: 750px;
+      margin: 0 auto 1.2rem;
+      font-weight: 400;
+    }
+
+    .about strong {
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .about em {
+      color: #334155;
+    }
+
+    .contact ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .contact li {
+      margin-bottom: 6px;
+    }
+
+    .contact a {
+      color: #0f172a;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    h3 {
+      margin-bottom: 0.75rem;
+    }
+
+    section.about,
+    section.contact {
+      text-align: center;
+      padding: 40px 0;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1 class="logo">TOBÍAS TARNOWSKI</h1>
-                <nav>
-                    <a href="#proyectos">Proyectos</a>
-                    <a href="#sobre-mi">Sobre mí</a>
-                    <a href="#contacto">Contacto</a>
-                </nav>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo">TOBÍAS TARNOWSKI</h1>
+        <nav aria-label="Principal">
+          <a href="#proyectos">Proyectos</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>¡Hola! Soy Tobias, un solucionador que trabaja en cualquier rincón de internet.</h2>
+            <p>Me enfoco en resolver. Conecto servicios, automatizo con n8n, armo flujos de IA, configuro redes y prototipo con Arduino. Si hace falta, desarrollo la web mínima para mostrar el resultado.</p>
+            <div class="buttons">
+              <a href="https://linkedin.com/in/tobias-tarnowski" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver LinkedIn</a>
+              <a href="https://github.com/trobias" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver GitHub</a>
             </div>
+          </div>
+          <div class="hero-image">
+            <img src="images/foto.png" alt="Tobías Tarnowski" width="280" height="auto" loading="lazy" />
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <!-- HERO -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h2>¡Hola! Soy Tobi, un solucionador que trabaja en cualquier rincón de internet.</h2>
-                        <p>No me considero un desarrollador web: me enfoco en resolver. Conecto servicios, automatizo con n8n, armo flujos de IA, configuro redes y prototipo con Arduino. Si hace falta, desarrollo la web mínima para mostrar el resultado.</p>
-                        <div class="buttons">
-                            <a href="https://linkedin.com/in/tobias-tarnowski" target="_blank" class="btn btn-primary">Ver LinkedIn</a>
-                            <a href="https://github.com/trobias" target="_blank" class="btn btn-secondary">Ver GitHub</a>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <img src="images/foto.png" alt="Tobías Tarnowski">
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="projects" aria-labelledby="titulo-proyectos">
+      <div class="container">
+        <h3 id="titulo-proyectos">Proyectos</h3>
+        <p class="projects-subtitle">Mis proyectos y trabajos agrupados por categoría</p>
 
-        <!-- PROYECTOS -->
-        <section id="proyectos" class="projects">
-            <div class="container">
-                <h3>Proyectos</h3>
-                <p class="projects-subtitle">Mis proyectos y trabajos agrupados por categoría</p>
+        <div class="project-categories">
+          <a href="proyectos/web-ia-n8n/index.html" class="category-card">
+            <div class="category-header"><span class="category-icon">●●●</span></div>
+            <h4>WEB, IA y n8n</h4>
+            <p>Automatizaciones, chatbots y flujos inteligentes</p>
+          </a>
 
-                <div class="project-categories">
-                    <a href="proyectos/web-ia-n8n/index.html" class="category-card">
-                        <div class="category-header"><span class="category-icon">●●●</span></div>
-                        <h4>WEB, IA y n8n</h4>
-                        <p>Automatizaciones, chatbots y flujos inteligentes</p>
-                    </a>
+          <a href="proyectos/redes-infra/index.html" class="category-card">
+            <div class="category-header"><span class="category-icon">●●●</span></div>
+            <h4>Redes & Infra</h4>
+            <p>Topologías, configuraciones y comunicaciones</p>
+          </a>
 
-                    <a href="proyectos/redes-infra/index.html" class="category-card">
-                        <div class="category-header"><span class="category-icon">●●●</span></div>
-                        <h4>Redes & Infra</h4>
-                        <p>Topologías, configuraciones y comunicaciones</p>
-                    </a>
+          <a href="proyectos/adobes-3d/index.html" class="category-card">
+            <div class="category-header"><span class="category-icon">●●●</span></div>
+            <h4>Adobes y 3D</h4>
+            <p>Modelado, renders y producción audiovisual</p>
+          </a>
 
-                    <a href="proyectos/adobes-3d/index.html" class="category-card">
-                        <div class="category-header"><span class="category-icon">●●●</span></div>
-                        <h4>Adobes y 3D</h4>
-                        <p>Modelado, renders y producción audiovisual</p>
-                    </a>
-
-                    <a href="proyectos/arduino-iot/index.html" class="category-card">
-                        <div class="category-header"><span class="category-icon">●●●</span></div>
-                        <h4>Arduino & IoT / Makers</h4>
-                        <p>Prototipos físicos y simulaciones</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SOBRE MÍ -->
-        <section id="sobre-mi" class="about">
-            <div class="container">
-                <h3>Sobre mí</h3>
-                <p>
-                    Soy estudiante de <strong>Ingeniería en Sistemas de Información</strong> en la Universidad de la Cuenca del Plata y <strong>Técnico Informático</strong> egresado de la E.P.E.T. N°1. 
-                    Me apasiona la <strong>automatización de procesos</strong>, el <strong>soporte técnico</strong> y la <strong>Inteligencia Artificial</strong>.  
-                    Actualmente desarrollo proyectos con <strong>n8n</strong>, <strong>Python</strong> y <strong>SQL</strong>, integrando herramientas como <strong>Google Workspace</strong> y <strong>APIs</strong> para crear soluciones prácticas para PYMEs.  
-                    También tengo experiencia en <strong>mantenimiento de hardware, redes</strong> y <strong>optimización de entornos informáticos</strong>.
-                </p>
-                <p>
-                    Mi enfoque es simple: <em>resolver problemas de manera eficiente, automatizar lo repetitivo y ayudar a las personas a trabajar mejor con tecnología.</em>
-                </p>
-            </div>
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contacto" class="contact">
-            <div class="container">
-                <h3>Contacto</h3>
-                <p>¿Querés hablar sobre un proyecto o colaboración?</p>
-                <ul>
-                    <li><strong>Email:</strong> <a href="mailto:tobias.44276@gmail.com">tobias.44276@gmail.com</a></li>
-                    <li><strong>Teléfono:</strong> <a href="tel:+5493764260055">+54 9 376 426 0055</a></li>
-                    <li><strong>Ubicación:</strong> Posadas, Misiones, Argentina</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>© 2025 Tobías Tarnowski — Automatización, Soporte y Soluciones con IA.</p>
+          <a href="proyectos/arduino-iot/index.html" class="category-card">
+            <div class="category-header"><span class="category-icon">●●●</span></div>
+            <h4>Arduino & IoT / Makers</h4>
+            <p>Prototipos físicos y simulaciones</p>
+          </a>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="about" aria-labelledby="titulo-sobre-mi">
+      <div class="container">
+        <h3 id="titulo-sobre-mi">Sobre mí</h3>
+        <p>
+          Soy estudiante de <strong>Ingeniería en Sistemas de Información</strong> en la Universidad de la Cuenca del Plata y técnico informático egresado de la E.P.E.T. N°1.  
+          Me apasiona la automatización de procesos, el soporte técnico y la inteligencia artificial.
+        </p>
+        <p>
+          Actualmente desarrollo proyectos con n8n, Python y SQL, integrando herramientas como Google Workspace y APIs para crear soluciones prácticas para PYMEs.  
+          También tengo experiencia en mantenimiento de hardware, redes y optimización de entornos informáticos.
+        </p>
+        <p>
+          Mi enfoque es simple: resolver problemas de manera eficiente, automatizar lo repetitivo y ayudar a las personas a trabajar mejor con tecnología.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <h3 id="titulo-contacto">Contacto</h3>
+        <p>¿Querés hablar sobre un proyecto o colaboración?</p>
+        <ul>
+          <li>Email: <a href="mailto:tobias.44276@gmail.com">tobias.44276@gmail.com</a></li>
+          <li>Teléfono: <a href="tel:+5493764260055">+54 9 376 426 0055</a></li>
+          <li>Ubicación: Posadas, Misiones, Argentina</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Tobías Tarnowski — Automatización, Soporte y Soluciones con IA.</p>
+    </div>
+  </footer>
 </body>
 </html>
