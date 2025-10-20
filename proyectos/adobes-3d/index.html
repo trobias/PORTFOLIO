@@ -14,9 +14,34 @@
         .project-item {
             background-color: #ffffff;
             border: 1px solid #e2e8f0;
-            border-radius: 8px;
+            border-radius: 10px;
+            padding: 0;
+            margin-bottom: 24px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+        }
+
+        .project-cover {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .project-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-content {
             padding: 24px;
-            margin-bottom: 20px;
         }
 
         .project-item h4 {
@@ -29,6 +54,33 @@
             color: #64748b;
             font-size: 15px;
             line-height: 1.6;
+        }
+
+        .project-actions {
+            margin-top: 16px;
+        }
+
+        .btn-xs {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            text-decoration: none;
+            font-weight: 600;
+            color: #0f172a;
+            background: #f8fafc;
+            font-size: 14px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn-xs.primary {
+            background: #0f172a;
+            color: #ffffff;
+        }
+
+        .btn-xs:hover {
+            transform: scale(1.02);
+            background: #e2e8f0;
         }
 
         .back-link {
@@ -65,20 +117,63 @@
                 <p class="projects-subtitle">Modelado, renders y producción audiovisual</p>
 
                 <div class="project-list">
+
+                    <!-- BEGAPANKU -->
                     <div class="project-item">
-                        <h4>Sketchup Nuevo Transfe</h4>
-                        <p>Modelado 3D arquitectónico en SketchUp para visualización de espacios y planificación de transformaciones estructurales.</p>
+                        <div class="project-cover">
+                            <img src="./begapanku/cover.jpg" alt="Cover Begapanku">
+                        </div>
+                        <div class="project-content">
+                            <h4>Begapanku</h4>
+                            <p>
+                                Proyecto de diseño gráfico y modelado 3D para branding y visualización de productos, 
+                                combinando herramientas de Adobe Illustrator, Photoshop y Blender para lograr una identidad visual moderna.
+                            </p>
+                            <div class="project-actions">
+                            <a class="btn-xs primary" href="https://docs.google.com/presentation/d/111Toyag6G2Ynvku2mBkqE5EIeJBR_U-SOjE4qAdgZ08/edit?usp=sharing" target="_blank">Ver presentación</a>
+                            <a class="btn-xs" href="./begapanku/begapanku.pdf" target="_blank" rel="noopener noreferrer">Ver Docs</a>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- SKETCHUP NUEVO TRANSFE -->
                     <div class="project-item">
-                        <h4>Begapanku</h4>
-                        <p>Proyecto de diseño gráfico y modelado 3D para branding y visualización de productos.</p>
+                        <div class="project-cover">
+                            <img src="./nuevoquaranta/cover.jpg" alt="Cover Sketchup Nuevo Transfe">
+                        </div>
+                        <div class="project-content">
+                            <h4>Sketchup Nuevo Transfe</h4>
+                            <p>
+                                Modelado 3D arquitectónico en <strong>SketchUp</strong> para visualización de espacios y planificación de 
+                                transformaciones estructurales, incorporando materiales, sombras y renders fotorrealistas.
+                            </p>
+                            <div class="project-actions">
+                                <a href="./nuevoquaranta/index.html" target="_blank" rel="noopener noreferrer" class="btn-xs primary">
+                                    Ver docs
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- ALGÚN VIDEO -->
                     <div class="project-item">
-                        <h4>Algún Video</h4>
-                        <p>Producción audiovisual con edición en Adobe Premiere y After Effects, incluyendo motion graphics y efectos visuales.</p>
+                        <div class="project-cover">
+                            <img src="./video/cover.jpg" alt="Cover Algún Video">
+                        </div>
+                        <div class="project-content">
+                            <h4>Algún Video</h4>
+                            <p>
+                                Producción audiovisual con edición en <strong>Adobe Premiere Pro</strong> y <strong>After Effects</strong>, 
+                                incluyendo motion graphics, efectos visuales y mezcla de audio, orientado a campañas y comunicación visual.
+                            </p>
+                            <div class="project-actions">
+                                <a href="./video/Algún-Video.pdf" target="_blank" rel="noopener noreferrer" class="btn-xs primary">
+                                    Ver docs
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>

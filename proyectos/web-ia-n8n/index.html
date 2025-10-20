@@ -1,103 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB, IA y n8n - Tobías Tarnowski</title>
-    <link rel="stylesheet" href="../../styles.css">
-    <style>
-        .project-list {
-            max-width: 800px;
-            margin: 40px auto;
-        }
-
-        .project-item {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 20px;
-        }
-
-        .project-item h4 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #0f172a;
-        }
-
-        .project-item p {
-            color: #64748b;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin: 40px 0 20px;
-            color: #a78bfa;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEB, IA y n8n — Proyectos de Tobías Tarnowski</title>
+  <link rel="stylesheet" href="../../styles.css" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1 class="logo">TOBÍAS TARNOWSKI</h1>
-                <nav>
-                    <a href="../../index.html">Inicio</a>
-                    <a href="../../index.html#proyectos">Proyectos</a>
-                </nav>
-            </div>
+  <header class="sub-header">
+    <div class="container">
+      <a href="../../index.html" class="btn-xs back">← Volver</a>
+      <h2>WEB, IA y n8n</h2>
+      <p class="subtitle">Webs, Automatizaciones, chatbots y flujos inteligentes.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="project-list">
+
+      <!-- ANIMABED -->
+      <article class="project-card">
+        <img src="./animabed/cover.jpg" alt="Animabed — portada" />
+        <div class="content">
+          <h5>Animabed</h5>
+          <p>E-commerce con landing page y base de datos CRUD hecho con PHP.</p>
         </div>
-    </header>
-
-    <main>
-        <section class="projects">
-            <div class="container">
-                <a href="../../index.html" class="back-link">← Volver al inicio</a>
-                <h3>WEB, IA y n8n</h3>
-                <p class="projects-subtitle">Automatizaciones, chatbots y flujos inteligentes</p>
-
-                <div class="project-list">
-                    <div class="project-item">
-                        <h4>Animabed</h4>
-                        <p>Plataforma web para gestión de contenido animado con integración de IA para procesamiento automático.</p>
-                    </div>
-
-                    <div class="project-item">
-                        <h4>Nutriado</h4>
-                        <p>Sistema de recomendaciones nutricionales basado en IA, con flujos automatizados en n8n para seguimiento personalizado.</p>
-                    </div>
-
-                    <div class="project-item">
-                        <h4>Emag-Chatbot</h4>
-                        <p>Chatbot inteligente para atención al cliente con procesamiento de lenguaje natural y respuestas contextuales.</p>
-                    </div>
-
-                    <div class="project-item">
-                        <h4>AsistenteIAConPython</h4>
-                        <p>Asistente virtual desarrollado en Python con capacidades de IA para automatización de tareas y análisis de datos.</p>
-                    </div>
-
-                    <div class="project-item">
-                        <h4>Jarvis Google Workspace</h4>
-                        <p>Integración de IA con Google Workspace para automatizar flujos de trabajo, gestión de documentos y comunicaciones.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>© 2025 Tobías Tarnowski — Creado con café, curiosidad y Vercel v0.</p>
+        <div class="project-actions">
+          <a class="btn-xs primary" href="./animabed/index.html" target="_blank">Ver docs</a>
         </div>
-    </footer>
+      </article>
+
+      <!-- NUTRIADO -->
+      <article class="project-card">
+        <img src="./nutriado/cover.jpg" alt="Nutriado — portada" />
+        <div class="content">
+          <h5>Nutriado</h5>
+          <p>Landing Page con Asistente nutricional que tiene integrado IA, n8n y BD en JS.</p>
+        </div>
+        <div class="project-actions">
+          <a class="btn-xs primary" href="https://nutriadoai.vercel.app/" target="_blank">Ver demo</a>
+          <a class="btn-xs" href="https://github.com/trobias/nutriado" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+        </div>
+      </article>
+
+      <!-- EMAG-CHATBOT -->
+      <article class="project-card">
+        <img src="./emag/cover.jpg" alt="EMAG Chatbot — portada" />
+        <div class="content">
+          <h5>EMAG-Chatbot</h5>
+          <p>Chatbot para atención virtual y automatización de respuestas, con integración de mercadopago, CRUD, catalogos y POSTGRES.</p>
+        </div>
+        <div class="project-actions">
+          <a class="btn-xs primary" href="emag/index.html" target="_blank">Ver docs</a>
+          <a class="btn-xs" href="https://github.com/trobias/BotdePedidosPorWhatsappEMAGAplicacionInteligente" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+        </div>
+      </article>
+
+      <!-- ASISTENTE IA CON PYTHON -->
+      <article class="project-card">
+        <img src="./linkedinia/cover.jpg" alt="Asistente IA con Python — portada" />
+        <div class="content">
+          <h5>Asistente IA con Python</h5>
+          <p>Asistente conversacional de Recursos Humanos que responde consultas sobre perfiles y empresas de LinkedIn en tiempo real, usando RAG con Cohere + FAISS + LangChain.</p>
+        </div>
+        <div class="project-actions">
+          <a class="btn-xs primary" href="./linkedinia/index.html" target="_blank">Ver docs</a>
+          <a class="btn-xs" href="https://github.com/trobias/AsistenteIALinkedIn" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+        </div>
+      </article>
+
+      <!-- JARVIS GOOGLE WORKSPACE -->
+      <article class="project-card">
+        <img src="./jarvis/cover.jpg" alt="Jarvis Google Workspace — portada" />
+        <div class="content">
+          <h5>Jarvis Google Workspace</h5>
+          <p>Automatizaciones internas con Gmail, Calendar, Contacts, Sheets y Tasks.</p>
+        </div>
+        <div class="project-actions">
+          <a class="btn-xs primary" href="./jarvis/index.html" target="_blank">Ver docs</a>
+          <a class="btn-xs" href="https://github.com/trobias/JARVIS-GOOGLEWORKSPACE-WHATSAPPCHATBOT" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Tobías Tarnowski</p>
+    </div>
+  </footer>
 </body>
 </html>
